@@ -57,6 +57,7 @@ def create_accounts():
         jsonify(message), status.HTTP_201_CREATED, {"Location": location_url}
     )
 
+
 ######################################################################
 # LIST ALL ACCOUNTS
 ######################################################################
@@ -64,7 +65,7 @@ def create_accounts():
 def list_accounts():
     """
     List all Accounts
-    This endpoint will list all Accounts        
+    This endpoint will list all Accounts
     """
     app.logger.info("Request to list Accounts")
 
@@ -74,6 +75,7 @@ def list_accounts():
     app.logger.info("were founded [%s] accounts", len(serAccounts))
 
     return jsonify(serAccounts), status.HTTP_200_OK
+
 
 ######################################################################
 # READ AN ACCOUNT
