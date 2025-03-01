@@ -4,6 +4,8 @@ on:
     branches:
       - main
       - add-ci-build
+  pull_request:
+      - main
   workflow_dispatch:
     branches:
       - add-ci-build
