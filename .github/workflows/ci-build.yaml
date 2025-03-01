@@ -1,12 +1,15 @@
-name: CI Build 
+name: CI Build
 on:
   push:
     branches:
       - main
+      - add-ci-build
   pull_request:
     branches:
       - main
+  workflow_dispatch:
       - add-ci-build
+
 
 jobs:
   build:
